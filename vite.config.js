@@ -15,8 +15,12 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         billetter: resolve(__dirname, "src/billetter.html"),
-        program: resolve(__dirname, "src/program.html"),
+        frivillig: resolve(__dirname, "src/frivillig.html"),
+        kontakt: resolve(__dirname, "src/kontakt.html"),
         om: resolve(__dirname, "src/om.html"),
+        program: resolve(__dirname, "src/program.html"),
+        samarbejde: resolve(__dirname, "src/samarbejde.html"),
+        singleview: resolve(__dirname, "src/singleview.html"),
       },
     },
   },
