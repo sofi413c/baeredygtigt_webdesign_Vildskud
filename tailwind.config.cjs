@@ -7,5 +7,5 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],}
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("daisyui")],
 };
