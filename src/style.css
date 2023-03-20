@@ -4,6 +4,12 @@
 
 body {
   font-family: "Poppins", "sans-serif";
+  background-image: linear-gradient(#82425f, #d07f4e, #869c4c);
+  height: 100vh;
+}
+
+main {
+  margin: 3.75rem;
 }
 
 h1 {
@@ -34,5 +40,9 @@ a {
   p,
   a {
     font-size: 1.25rem;
+  }
+
+  main {
+    margin: 1.563rem;
   }
 }
