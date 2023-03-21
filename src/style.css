@@ -6,6 +6,7 @@ body {
   font-family: "Poppins", "sans-serif";
   background-image: linear-gradient(#82425f, #d07f4e, #869c4c);
   height: auto;
+  color: white;
 }
 
 main {
