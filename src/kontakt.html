@@ -79,48 +79,96 @@
       </nav>
     </header>
 
-    <main>
-      <h1>KONTAKT</h1>
-      <h3>Skriv til os!</h3>
-      <p>
-        Har du spørgsmål om frivilligt arbejde, samarbejde med Vildskud eller
-        festivaloptræden? Kontakt Vildskud-temaet via kontaktformularen.
-      </p>
+    <main class="lg:mx-80">
+      <section class="mb-10">
+        <h1 class="text-center">KONTAKT</h1>
+        <h3 class="text-center">Skriv til os!</h3>
+        <p class="text-center">
+          Har du spørgsmål om frivilligt arbejde, samarbejde med Vildskud eller
+          festivaloptræden? Kontakt Vildskud-temaet via kontaktformularen.
+        </p>
+      </section>
 
       <!-- Indsæt kontakt-formular via. DaisyUI -->
-      <section></section>
+      <section class="mb-10">
+        <div class="form-control w-full max-w-xs">
+          <label class="label">
+            <span class="label-text">Navn*</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input-bordered input w-full max-w-xs"
+          />
 
-      <section>
-        <h2>TEAMET</h2>
-        <div>
-          <p>NIKITA FERNANDO</p>
-          <p class="font-bold">Projektleder og gruppeansvarlig</p>
-          <p>info@vildskud.dk // grupper@vildskud.dk</p>
+          <label class="label">
+            <span class="label-text">Email*</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input-bordered input w-full max-w-xs"
+          />
+
+          <label class="label">
+            <span class="label-text">Emne</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input-bordered input w-full max-w-xs"
+          />
+
+          <label class="label">
+            <span class="label-text">Besked</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input-bordered input h-48 w-full max-w-xs"
+          />
         </div>
-        <div>
-          <p>STINA HYLLESTED VOLF</p>
-          <p class="font-bold">Blæksprutte</p>
-          <p>info@vildskud.dk</p>
-        </div>
-        <div>
-          <p>KIRSTINE AABEL EIGTVED</p>
-          <p class="font-bold">Blæksprutte & presse</p>
-          <p>info@vildskud.dk</p>
-        </div>
-        <div>
-          <p>LOUISE LETH FELDTHUS</p>
-          <p class="font-bold">Juryansvarlig og Billetansvarlig</p>
-          <p>billet@vildskud.com</p>
-        </div>
-        <div>
-          <p>VIBEKE BLINDBÆK</p>
-          <p class="font-bold">Pr, medier og presse</p>
-          <p>progpresse@vildskud.dk</p>
-        </div>
-        <div>
-          <p>BALDRIAN SECTOR</p>
-          <p class="font-bold">Cheftekniker</p>
-          <p>teknik@vildskud.dk</p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="mb-10 text-center font-bold italic text-custom_green">
+          TEAMET
+        </h2>
+        <div class="grid lg:grid-cols-2 lg:gap-10">
+          <div>
+            <div class="mb-5">
+              <p>NIKITA FERNANDO</p>
+              <p class="font-bold">Projektleder og gruppeansvarlig</p>
+              <p>info@vildskud.dk // grupper@vildskud.dk</p>
+            </div>
+            <div class="mb-5">
+              <p>STINA HYLLESTED VOLF</p>
+              <p class="font-bold">Blæksprutte</p>
+              <p>info@vildskud.dk</p>
+            </div>
+            <div class="mb-5">
+              <p>KIRSTINE AABEL EIGTVED</p>
+              <p class="font-bold">Blæksprutte & presse</p>
+              <p>info@vildskud.dk</p>
+            </div>
+          </div>
+          <div>
+            <div class="mb-5">
+              <p>LOUISE LETH FELDTHUS</p>
+              <p class="font-bold">Juryansvarlig og Billetansvarlig</p>
+              <p>billet@vildskud.com</p>
+            </div>
+            <div class="mb-5">
+              <p>VIBEKE BLINDBÆK</p>
+              <p class="font-bold">Pr, medier og presse</p>
+              <p>progpresse@vildskud.dk</p>
+            </div>
+            <div class="mb-5">
+              <p>BALDRIAN SECTOR</p>
+              <p class="font-bold">Cheftekniker</p>
+              <p>teknik@vildskud.dk</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
