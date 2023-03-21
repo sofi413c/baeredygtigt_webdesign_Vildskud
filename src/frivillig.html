@@ -2,13 +2,100 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
-    />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body class="bg-">
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="flex-1">
+            <img class="btn-ghost btn-square btn" src="billeder/logo.svg" alt="logo_vildskud" />
+            <h3 class="text-white">VILDSKUD FESTIVAL</h3>
+          </div>
+
+          <div class="flex-none">
+            <button class="hamburger btn-ghost btn-square btn z-50 cursor-pointer">
+              <img class="menuIcon" src="billeder/burgermenu.svg" alt="burgermenu" />
+              <img class="closeIcon hidden" src="billeder/kryds_burgermenu.svg" alt="burgermenu-luk" />
+            </button>
+            <ul class="fixed top-0 right-0 bottom-0 z-40 w-full translate-x-full bg-beige pt-20 pr-7 text-right text-3xl font-thin text-gradient_purple backdrop-blur-lg transition-transform" id="hammenu">
+              <li><a class="menuItem" href="index.html">Forside</a></li>
+              <li><a class="menuItem" href="billetter.html">Billetter</a></li>
+              <li><a class="menuItem" href="program.html">Program</a></li>
+              <li><a class="menuItem" href="frivillig.html">Frivillig</a></li>
+              <li><a class="menuItem" href="om.html">Om</a></li>
+              <li><a class="menuItem" href="samarbejder.html">Samarbejde</a></li>
+              <li><a class="menuItem" href="kontakt.html">Kontakt</a></li>
+              <li><a class="menuItem" href="singleview.html">Singleview</a></li>
+              <a href="https://www.facebook.com/vildskudfestival/?locale=da_DK"><img class="" src="billeder/fb_logo.svg" alt="facebook logo" /></a>
+              <a href="https://www.instagram.com/vildskud_festival/"><img class="" src="billeder/insta_logo.svg" alt="instagram logo" /></a>
+
+              <li><a class="menuItem" href="#skillevej">Skillevej</a></li>
+              <li><a class="menuItem" href="#nybegyndelse">Ny begyndelse</a></li>
+              <li><a class="menuItem" href="#lidtifem">Lidt i Fem</a></li>
+              <li><a class="menuItem" href="#analogfotografering">Analog Fotografering</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mx-auto text-center">
+      <section>
+        <h1>FRIVILLIG</h1>
+
+        <h3>Der er åben for frivilligansøgninger!</h3>
+        <p class="mx-auto max-w-lg">Vil du være en del af det fællesskab, der til sommer får Vildskud til at køre på skinner? Kontakt os og fortæl hvorfor netop du skal være med til at skabe sommerens scenekunsts festival i København.</p>
+
+        <button class="mx-auto mt-8 rounded bg-white">
+          <p class="place-items-center font-bold text-custom_purple">KONTAKT OS</p>
+        </button>
+      </section>
+
+      <section class="m-4 mt-20">
+        <div class="divide-y-4 border"></div>
+      </section>
+
+      <section>
+        <h1>VI HAR BRUG FOR DIG</h1>
+        <p class="mx-auto max-w-lg">Alle frivillige får mulighed for at se forestillingerne gratis, får mad under deres vagter og muligheden for at møde en masse teaternørder. Jobbet som frivillig består af 2 vagter på 3-4 timer. Der er et infomøde d. 1. august 2022. Vil du være frivillig, eller har du spørgsmål så skriv til: frivillig@vildskud.dk</p>
+      </section>
+    </main>
+
+    <section class="m-4 mt-20">
+      <div class="divide-y-4 border"></div>
+    </section>
+
+    <footer class="footer mx-auto grid w-full grid-cols-3 justify-items-center pb-7">
+      <div>
+        <span class="text-sm font-bold">KONTAKT</span>
+        <a class="link-hover link text-xs">Guldbergsgade 29N</a>
+        <a class="link-hover link text-xs">2200 København Nv</a>
+        <a class="link-hover link text-xs">info@vildskud.dk</a>
+        <a class="link-hover link text-xs">+45 XX XX XX XX</a>
+      </div>
+      <div>
+        <span class="text-sm font-bold">VILDSKUD</span>
+        <a class="link-hover link text-xs">Om os</a>
+        <a class="link-hover link text-xs">Optræd</a>
+        <a class="link-hover link text-xs">Privatlivspolitik</a>
+        <a class="link-hover link text-xs">Cookie politik</a>
+      </div>
+      <div class="mb-8">
+        <span class="text-sm font-bold">SOCIALE MEDIER</span>
+        <div class="mx-auto grid grid-flow-col gap-4">
+          <a
+            ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg
+          ></a>
+          <a
+            ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
