@@ -31,7 +31,7 @@ main {
 }
 
 header {
-  margin-inline:1rem;
+  margin-inline: 1rem;
 }
 
 /* Desktop */
@@ -62,4 +62,9 @@ header {
 /*Burgermenu*/
 .showMenu {
   transform: translateY(0);
+}
+
+.dropdown {
+  transform: translateY(0);
+
 }
