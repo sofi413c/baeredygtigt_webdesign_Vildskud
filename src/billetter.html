@@ -2,22 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
-    />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-<nav>
+      <nav>
+        <div class="navbar">
+          <div class="flex-1">
+            <img class="btn-ghost btn-square btn" src="billeder/logo.svg" alt="logo_vildskud" />
+            <h3 class="text-white">VILDSKUD FESTIVAL</h3>
+          </div>
 
-</nav>
+          <div class="flex-none">
+            <button class="hamburger btn-ghost btn-square btn z-50 cursor-pointer">
+              <img class="menuIcon" src="billeder/burgermenu.svg" alt="burgermenu" />
+              <img class="closeIcon hidden" src="billeder/kryds_burgermenu.svg" alt="burgermenu-luk" />
+            </button>
+            <ul class="fixed top-0 right-0 bottom-0 z-40 w-full translate-x-full bg-beige pt-20 pr-7 text-right text-3xl font-thin text-gradient_purple backdrop-blur-lg transition-transform" id="hammenu">
+              <li><a class="menuItem" href="index.html">Forside</a></li>
+              <li><a class="menuItem" href="billetter.html">Billetter</a></li>
+              <li><a class="menuItem" href="program.html">Program</a></li>
+              <li><a class="menuItem" href="frivillig.html">Frivillig</a></li>
+              <li><a class="menuItem" href="om.html">Om</a></li>
+              <li><a class="menuItem" href="samarbejder.html">Samarbejde</a></li>
+              <li><a class="menuItem" href="kontakt.html">Kontakt</a></li>
+              <li><a class="menuItem" href="singleview.html">Singleview</a></li>
+              <a href="https://www.facebook.com/vildskudfestival/?locale=da_DK"><img class="" src="billeder/fb_logo.svg" alt="facebook logo" /></a>
+              <a href="https://www.instagram.com/vildskud_festival/"><img class="" src="billeder/insta_logo.svg" alt="instagram logo" /></a>
+
+              <li><a class="menuItem" href="#skillevej">Skillevej</a></li>
+              <li><a class="menuItem" href="#nybegyndelse">Ny begyndelse</a></li>
+              <li><a class="menuItem" href="#lidtifem">Lidt i Fem</a></li>
+              <li><a class="menuItem" href="#analogfotografering">Analog Fotografering</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-fdjsoglæjdos
+      <section class="mb-10">
+        <h1 class="text-center">BILLETTER</h1>
+        <h2 class="text-center">Få adgang til kulturens univers</h2>
+        <h3 class="text-center">Oplev unikke forestillinger og skab uforglemmelige minder. Køb dine billetter i dag!</h3>
+      </section>
+
+      <div class="indicator z-50 flex place-content-end justify-end ml-5">
+        <p class="badge-primary indicator-item bg-custom_green p-1 text-custom_purple">MEST POPULÆRE</p>
+      </div>
+      <section class="mb-9 -mx-8 grid grid-cols-4 bg-base-100 py-7 pl-10 text-gradient_purple shadow-xl">
+        <div class="col-span-3">
+          <h2 class="card-title">PARTOUT-BILLET</h2>
+          <p>Gå ikke glip af noget og køb billet til alle dage!</p>
+          <a class="underline" href="">Mere info</a>
+        </div>
+        <p class="grid -rotate-90 place-content-center justify-center">295DKK</p>
+      </section>
+
+      <section class="mb-9 -mx-8 grid grid-cols-4 bg-base-100 py-7 pl-10 text-custom_purple shadow-xl">
+        <div class="col-span-3">
+          <h2 class="card-title">PARTOUT-BILLET</h2>
+          <p>Gå ikke glip af noget og køb billet til alle dage!</p>
+          <a class="underline" href="">Mere info</a>
+        </div>
+        <p class="grid -rotate-90 place-content-center justify-center">295DKK</p>
+      </section>
+
+      <section class="mb-9 -mx-8 grid grid-cols-4 bg-base-100 py-7 pl-10 text-gradient_purple shadow-xl">
+        <div class="col-span-3">
+          <h2 class="card-title">PARTOUT-BILLET</h2>
+          <p>Gå ikke glip af noget og køb billet til alle dage!</p>
+          <a class="underline" href="">Mere info</a>
+        </div>
+        <p class="grid -rotate-90 place-content-center justify-center">295DKK</p>
+      </section>
     </main>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
