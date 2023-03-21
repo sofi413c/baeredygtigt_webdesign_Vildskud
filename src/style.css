@@ -26,6 +26,14 @@ a {
   font-size: 0.938rem;
 }
 
+main {
+  margin: 1.563rem;
+}
+
+header {
+  margin-inline:1rem;
+}
+
 /* Desktop */
 @media (min-width: 450px) {
   h1 {
@@ -43,7 +51,11 @@ a {
   }
 
   main {
-    margin: 1.563rem;
+    margin-inline: 3.75rem;
+  }
+
+  header {
+    margin-inline: 3.75rem;
   }
 }
 

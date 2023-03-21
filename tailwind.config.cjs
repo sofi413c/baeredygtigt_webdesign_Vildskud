@@ -10,6 +10,7 @@ module.exports = {
         gradient_orange: "#D07F4E",
         gradient_purple: "#82425F",
         beige: "#F3F3F3",
+        gold: "#DAB430",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
