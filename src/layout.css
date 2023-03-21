@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+article {
+  border: 1px solid black;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.info {
+  padding: 1rem;
+}
+
+#holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* section {
+  margin: 1.563rem;
+} */
+
+@media (min-width: 600px) {
+  #holder {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

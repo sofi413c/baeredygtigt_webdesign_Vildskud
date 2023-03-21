@@ -14,6 +14,8 @@ main {
 
 h1 {
   font-size: 2.5rem;
+  color: #c8ffa3;
+  font-weight: 700;
 }
 h2 {
   font-size: 1.875rem;
@@ -66,5 +68,4 @@ header {
 
 .dropdown {
   transform: translateY(0);
-
 }
