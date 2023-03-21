@@ -1,14 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Program - Vildskud Festival</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main></main>
+    <template>
+      <article>
+        <img class="billedeurl" src="" alt="" />
+        <h3 class="titel"></h3>
+        <p class="datoer"></p>
+        <p class="lokation"></p>
+      </article>
+    </template>
+
+    <script>
+      const url = "https://vildskudfestival-9579.restdb.io/rest/forestillinger";
+
+      const options = {
+        headers: {
+          "x-apikey": "64199fc322634c74fb00afb8",
+        },
+      };
+
+      async function hentData() {
+        const response = await fetch(url, options);
+        const json = await response.json();
+        vis(json);
+      }
+
+      const main = document.querySelector("main");
+      const template = document.querySelector("template").content;
+
+      function vis(json) {
+        console.log(json);
+        json.forEach((forestilling) => {
+          const klon = template.cloneNode(true);
+          klon.querySelector(".billedeurl").src =
+            "billeder/" + forestilling.billedetekst + ".webp";
+          klon.querySelector(".titel").textContent = forestilling.titel;
+          klon.querySelector(".datoer").textContent = forestilling.datoer;
+          klon.querySelector(".lokation").textContent = forestilling.lokation;
+          main.appendChild(klon);
+        });
+      }
+
+      hentData();
+    </script>
+  </body>
 </html>
