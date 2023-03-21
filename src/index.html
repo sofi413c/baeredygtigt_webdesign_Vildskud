@@ -21,7 +21,7 @@
               <img class="menuIcon" src="billeder/burgermenu.svg" alt="burgermenu" />
               <img class="closeIcon hidden" src="billeder/kryds_burgermenu.svg" alt="burgermenu-luk" />
             </button>
-            <ul class="text-gradient_purple bg-beige fixed top-0 right-0 bottom-0 z-40 w-full translate-x-full pt-20 pr-7 text-right text-3xl font-thin backdrop-blur-lg transition-transform" id="hammenu">
+            <ul class="fixed top-0 right-0 bottom-0 z-40 w-full translate-x-full bg-beige pt-20 pr-7 text-right text-3xl font-thin text-gradient_purple backdrop-blur-lg transition-transform" id="hammenu">
               <li><a class="menuItem" href="index.html">Forside</a></li>
               <li><a class="menuItem" href="billetter.html">Billetter</a></li>
               <li><a class="menuItem" href="program.html">Program</a></li>
@@ -42,7 +42,21 @@
         </div>
       </nav>
     </header>
-    <main>fdjsoglæjdos</main>
+    <main>
+      <section class="hero">
+        <div class="vildskud_er grid place-items-center pt-10">
+          <img src="img/vildskuder.svg" alt="hero" />
+        </div>
+      </section>
+      <div class="m-2 mx-auto grid w-fit gap-5">
+        <button class="justify-content-center grid rounded bg-white">
+          <p class="place-items-center">KØB BILLET</p>
+        </button>
+        <button class="justify-content-center grid rounded border-2 border-solid border-white">
+          <p class="place-items-center">UDFORSK PROGRAM</p>
+        </button>
+      </div>
+    </main>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
