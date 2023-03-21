@@ -46,3 +46,8 @@ a {
     margin: 1.563rem;
   }
 }
+
+/*Burgermenu*/
+.showMenu {
+  transform: translateY(0);
+}

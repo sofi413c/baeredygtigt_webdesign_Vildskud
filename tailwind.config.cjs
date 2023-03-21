@@ -9,15 +9,12 @@ module.exports = {
         gradient_green: "#8A9B4D",
         gradient_orange: "#D07F4E",
         gradient_purple: "#82425F",
+        beige: "#F3F3F3",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-    require("daisyui"),
-  ],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("daisyui")],
 };
