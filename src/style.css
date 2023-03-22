@@ -65,6 +65,15 @@ header {
 }
 
 .dropdown {
-  transform: translateY(0);
+  animation-name: fade_in_kf;
+  animation-duration: 3s;
+}
 
+@keyframes fade_in_kf {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
 }
