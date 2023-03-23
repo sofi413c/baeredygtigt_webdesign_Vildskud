@@ -36,7 +36,6 @@ const singleview2 = document.querySelector("#singleview2");
 const tid_sted = document.querySelector(".tid_sted");
 const toggle_btn2 = document.querySelector(".toggle_btn2");
 
-
 const close3 = document.querySelector(".close3");
 const open3 = document.querySelector(".open3");
 const singleview3 = document.querySelector("#singleview3");

@@ -9,6 +9,7 @@ module.exports = {
         gradient_green: "#8A9B4D",
         gradient_orange: "#D07F4E",
         gradient_purple: "#82425F",
+        purple_button: "#732565",
         beige: "#F3F3F3",
         gold: "#DAB430",
       },
@@ -17,5 +18,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("daisyui"),
+  ],
 };
