@@ -5,10 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,35 +13,17 @@
       <nav>
         <div class="navbar">
           <div class="flex-1">
-            <a href="index.html"
-              ><img
-                class="btn-ghost btn-square btn"
-                src="billeder/logo.svg"
-                alt="logo_vildskud"
-            /></a>
+            <a href="index.html"><img class="btn-ghost btn-square btn" src="billeder/logo.svg" alt="logo_vildskud" /></a>
 
             <h3 class="text-white">VILDSKUD FESTIVAL</h3>
           </div>
 
           <div class="flex-none">
-            <button
-              class="hamburger btn-ghost btn-square btn z-50 cursor-pointer"
-            >
-              <img
-                class="menuIcon"
-                src="billeder/burgermenu.svg"
-                alt="burgermenu"
-              />
-              <img
-                class="closeIcon hidden"
-                src="billeder/kryds_burgermenu.svg"
-                alt="burgermenu-luk"
-              />
+            <button class="hamburger btn-ghost btn-square btn z-50 cursor-pointer">
+              <img class="menuIcon" src="billeder/burgermenu.svg" alt="burgermenu" />
+              <img class="closeIcon hidden" src="billeder/kryds_burgermenu.svg" alt="burgermenu-luk" />
             </button>
-            <ul
-              class="fixed top-0 right-0 bottom-0 z-40 w-full translate-x-full bg-beige pt-20 pr-7 text-right text-3xl font-thin text-gradient_purple backdrop-blur-lg transition-transform"
-              id="hammenu"
-            >
+            <ul class="fixed top-0 right-0 bottom-0 z-40 w-full translate-x-full bg-beige pt-20 pr-7 text-right text-3xl font-thin text-gradient_purple backdrop-blur-lg transition-transform" id="hammenu">
               <li><a class="menuItem" href="index.html">Forside</a></li>
               <li><a class="menuItem" href="billetter.html">Billetter</a></li>
               <li><a class="menuItem" href="program.html">Program</a></li>
@@ -55,15 +34,8 @@
               </li>
               <li><a class="menuItem" href="kontakt.html">Kontakt</a></li>
               <li><a class="menuItem" href="singleview.html">Singleview</a></li>
-              <a href="https://www.facebook.com/vildskudfestival/?locale=da_DK"
-                ><img class="" src="billeder/fb_logo.svg" alt="facebook logo"
-              /></a>
-              <a href="https://www.instagram.com/vildskud_festival/"
-                ><img
-                  class=""
-                  src="billeder/insta_logo.svg"
-                  alt="instagram logo"
-              /></a>
+              <a href="https://www.facebook.com/vildskudfestival/?locale=da_DK"><img class="" src="billeder/fb_logo.svg" alt="facebook logo" /></a>
+              <a href="https://www.instagram.com/vildskud_festival/"><img class="" src="billeder/insta_logo.svg" alt="instagram logo" /></a>
 
               <li><a class="menuItem" href="#skillevej">Skillevej</a></li>
               <li>
@@ -71,9 +43,7 @@
               </li>
               <li><a class="menuItem" href="#lidtifem">Lidt i Fem</a></li>
               <li>
-                <a class="menuItem" href="#analogfotografering"
-                  >Analog Fotografering</a
-                >
+                <a class="menuItem" href="#analogfotografering">Analog Fotografering</a>
               </li>
             </ul>
           </div>
@@ -83,38 +53,96 @@
     <main>
       <section class="text-center">
         <h1>GOGO YO_YOKO</h1>
-        <h3>
-          Med inspiration i Shinrin-Yoku, anti-happy-go-lucky-mentalitet,
-          vigtige venner og svære erkendelser tager Teater Kopfkino os med på en
-          komisk dannelsesrejse midt i bøvlede livsprocesser.
-        </h3>
-        <img
-          class=""
-          src="billeder/placeholder.webp"
-          alt="gogo yo-yoko plakat"
-        />
-        <button class="bg-white p-3 px-14 text-custom_purple drop-shadow-lg">
-          Køb billet
-        </button>
+        <h3>Med inspiration i Shinrin-Yoku, anti-happy-go-lucky-mentalitet, vigtige venner og svære erkendelser tager Teater Kopfkino os med på en komisk dannelsesrejse midt i bøvlede livsprocesser.</h3>
+        <img class="w-40 " src="billeder/placeholder.webp" alt="gogo yo-yoko plakat" />
+        <button class="bg-white p-3 px-14 text-custom_purple drop-shadow-lg">Køb billet</button>
       </section>
 
       <section>
-        <!-- <div class="wrapper">
-        
-            <div class="menu">
-              <p>En forestilling af KOPFKINO Find din yoyo frem og sæt dig selv fri i en skov. Det går godt for de tre roomies med at dele lejlighed, men kæft det går dårligt med at være mennesker i en nulfejlskultur, hvor alt handler om meritter og milepælsplaner. Rakel er blevet droppet af sin eks, Lua kommer bare aldrig videre til prøverne på Skuespillerskolen og Skjold dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre for at blive stemplet som fiasko. Ikke flere hvide løgne for at være bedre end man er. Ikke mere pleaser-pis for at rykke op i sit selvskabte hierarki. Ud med skam og ind med sandhed.</p>
-            </div>
-        </div> -->
+        <button class="toggle_btn z-60 btn-ghost btn cursor-pointer gap-4">
+          <h3>Beskrivelse</h3>
+          <img class="open" src="billeder/down.svg" alt="burgermenu" />
+          <img class="close hidden" src="billeder/up.svg" alt="burgermenu-luk" />
+        </button>
 
-        <div class="">
-          
-          <button class="toggle_btn z-60 btn-ghost btn-square btn cursor-pointer">
-            <img class="open" src="billeder/down.svg" alt="burgermenu" />
-            <img class="close hidden" src="billeder/up.svg" alt="burgermenu-luk" />
-          </button>
-          <div class="top-0 right-0 bottom-0 z-30 text-white opacity-0 transition-transform" id="singleview">
-            <p class="beskrivelse">En forestilling af KOPFKINO Find din yoyo frem og sæt dig selv fri i en skov. Det går godt for de tre roomies med at dele lejlighed, men kæft det går dårligt med at være mennesker i en nulfejlskultur, hvor alt handler om meritter og milepælsplaner. Rakel er blevet droppet af sin eks, Lua kommer bare aldrig videre til prøverne på Skuespillerskolen og Skjold dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre for at blive stemplet som fiasko. Ikke flere hvide løgne for at være bedre end man er. Ikke mere pleaser-pis for at rykke op i sit selvskabte hierarki. Ud med skam og ind med sandhed.</p>
-          </div>
+        <div class="mb-5 divide-y-2 border"></div>
+
+        <div id="singleview">
+          <p class="beskrivelse">En forestilling af KOPFKINO Find din yoyo frem og sæt dig selv fri i en skov. Det går godt for de tre roomies med at dele lejlighed, men kæft det går dårligt med at være mennesker i en nulfejlskultur, hvor alt handler om meritter og milepælsplaner. Rakel er blevet droppet af sin eks, Lua kommer bare aldrig videre til prøverne på Skuespillerskolen og Skjold dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre for at blive stemplet som fiasko. Ikke flere hvide løgne for at være bedre end man er. Ikke mere pleaser-pis for at rykke op i sit selvskabte hierarki. Ud med skam og ind med sandhed.</p>
+        </div>
+      </section>
+
+      <section class="mt-5">
+        <button class="toggle_btn2 z-60 btn-ghost btn cursor-pointer gap-4">
+          <h3>Tid og sted</h3>
+          <img class="open2" src="billeder/down.svg" alt="burgermenu" />
+          <img class="close2 hidden" src="billeder/up.svg" alt="burgermenu-luk" />
+        </button>
+
+        <div class="mb-5 divide-y-2 border"></div>
+
+        <div id="singleview2">
+          <article class="tid_sted mb-10 grid grid-cols-2">
+            <div class="mx-auto text-end">
+              <h3 class="font-bold">TID</h3>
+            </div>
+
+            <div class="col-start-2 grid border-l-2 pl-10">
+              <div class="pb-4">
+                <p class="text-sm font-bold">15:30</p>
+                <p class="text-sm font-bold">20:00</p>
+              </div>
+            </div>
+          </article>
+          <article class="tid_sted mb-10 grid grid-cols-2">
+            <div class="mx-auto text-end">
+              <h3 class="font-bold">STED</h3>
+            </div>
+
+            <div class="col-start-2 grid border-l-2 pl-10">
+              <div class="pb-4">
+                <h3 class="text-sm font-bold">Xenon - Teaterhuset</h3>
+                <p class="text-xs">Rådhusstræde 13, 1466 København</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-5">
+        <button class="toggle_btn3 z-60 btn-ghost btn cursor-pointer gap-4">
+          <h3>Medvirkende</h3>
+          <img class="open3" src="billeder/down.svg" alt="burgermenu" />
+          <img class="close3 hidden" src="billeder/up.svg" alt="burgermenu-luk" />
+        </button>
+
+        <div class="mb-5 divide-y-2 border"></div>
+
+        <div id="singleview3">
+          <p class="mb-5">
+            <b>Instruktør</b><br />
+            August Aabo
+          </p>
+          <p class="mb-5">
+            <b>Skuespillere</b> <br />
+            Ann Celina Fønsskov, Sally Klie & Luca Storm Tekniker Niels Eske Juul Andersen
+          </p>
+          <p class="mb-5">
+            <b>Komponist</b> <br />
+            Simon Klie Lyrik Musa Mijia
+          </p>
+          <p class="mb-5">
+            <b>Scenograf</b> <br />
+            Ida Sofie Larsen
+          </p>
+          <p class="mb-5">
+            <b>Fotograf</b> <br />
+            Tenzin Olivia Gustenhoff & Liva Bech Holskov
+          </p>
+          <p class="mb-5">
+            <b>Konsulent</b> <br />
+            Emil Christiansen
+          </p>
         </div>
       </section>
     </main>

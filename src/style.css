@@ -36,7 +36,14 @@ main {
 
 header {
   margin-inline: 1rem;
+  padding-top: 2rem;
 }
+
+.flex-1 {
+  gap: 0.5rem;
+}
+
+
 
 /* Desktop */
 @media (min-width: 450px) {
@@ -60,6 +67,7 @@ header {
 
   header {
     margin-inline: 3.75rem;
+    padding-top: 2rem;
   }
 }
 
@@ -68,9 +76,28 @@ header {
   transform: translateY(0);
 }
 
+#singleview {
+  height: 0;
+  overflow: hidden;
+}
+#singleview2 {
+  height: 0;
+  overflow: hidden;
+}
+#singleview3 {
+  height: 0;
+  overflow: hidden;
+}
+
+.dropdown {
+  height: 100% !important;
+  transform: translateY(0%);
+}
+
 .dropdown {
   animation-name: fade_in_kf;
   animation-duration: 3s;
+  transition: all 0.5s ease-in-out;
 }
 
 @keyframes fade_in_kf {
