@@ -43,8 +43,6 @@ header {
   gap: 0.5rem;
 }
 
-
-
 /* Desktop */
 @media (min-width: 450px) {
   h1 {
