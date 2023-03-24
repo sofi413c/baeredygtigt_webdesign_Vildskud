@@ -16,12 +16,16 @@
       <nav>
         <div class="navbar">
           <div class="flex-1">
-            <img
-              class="btn-ghost btn-square btn"
-              src="billeder/logo.svg"
-              alt="logo_vildskud"
-            />
-            <h3 class="text-white">VILDSKUD FESTIVAL</h3>
+            <a href="index.html"
+              ><img
+                class="btn-ghost btn-square btn"
+                src="billeder/logo.svg"
+                alt="logo_vildskud"
+            /></a>
+            <div>
+              <h3 class="text-white">VILDSKUD FESTIVAL</h3>
+              <p class="text-white">8.-12. august</p>
+            </div>
           </div>
 
           <div class="flex-none">
@@ -39,40 +43,61 @@
                 alt="burgermenu-luk"
               />
             </button>
+
             <ul
-              class="fixed top-0 right-0 bottom-0 z-40 w-full translate-x-full bg-beige pt-20 pr-7 text-right text-3xl font-thin text-gradient_purple backdrop-blur-lg transition-transform"
+              class="fixed top-0 right-0 bottom-0 z-40 grid w-full translate-x-full grid-rows-3 bg-beige pt-20 pl-16 text-left text-3xl font-thin text-gradient_purple backdrop-blur-lg transition-transform lg:pl-28"
               id="hammenu"
             >
-              <li><a class="menuItem" href="index.html">Forside</a></li>
-              <li><a class="menuItem" href="billetter.html">Billetter</a></li>
-              <li><a class="menuItem" href="program.html">Program</a></li>
-              <li><a class="menuItem" href="frivillig.html">Frivillig</a></li>
-              <li><a class="menuItem" href="om.html">Om</a></li>
-              <li>
-                <a class="menuItem" href="samarbejder.html">Samarbejde</a>
-              </li>
-              <li><a class="menuItem" href="kontakt.html">Kontakt</a></li>
-              <li><a class="menuItem" href="singleview.html">Singleview</a></li>
-              <a href="https://www.facebook.com/vildskudfestival/?locale=da_DK"
-                ><img class="" src="billeder/fb_logo.svg" alt="facebook logo"
-              /></a>
-              <a href="https://www.instagram.com/vildskud_festival/"
-                ><img
-                  class=""
-                  src="billeder/insta_logo.svg"
-                  alt="instagram logo"
-              /></a>
+              <div class="mt-10">
+                <a href="index.html"
+                  ><img
+                    class="btn-ghost btn-square btn -mt-10 mb-11"
+                    src="billeder/logo.svg"
+                    alt="logo_vildskud"
+                /></a>
 
-              <li><a class="menuItem" href="#skillevej">Skillevej</a></li>
-              <li>
-                <a class="menuItem" href="#nybegyndelse">Ny begyndelse</a>
-              </li>
-              <li><a class="menuItem" href="#lidtifem">Lidt i Fem</a></li>
-              <li>
-                <a class="menuItem" href="#analogfotografering"
-                  >Analog Fotografering</a
-                >
-              </li>
+                <li class="mb-4">
+                  <a class="menuItem font-semibold" href="billetter.html"
+                    >Billetter</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a class="menuItem font-semibold" href="program.html"
+                    >Program</a
+                  >
+                </li>
+                <li class="mb-10">
+                  <a class="menuItem font-semibold" href="frivillig.html"
+                    >Frivillig</a
+                  >
+                </li>
+              </div>
+              <div class="mb-60 mt-20 flex grid-rows-2 gap-4">
+                <a
+                  href="https://www.facebook.com/vildskudfestival/?locale=da_DK"
+                  ><img class="" src="billeder/fb_logo.svg" alt="facebook logo"
+                /></a>
+                <a href="https://www.instagram.com/vildskud_festival/"
+                  ><img
+                    class=""
+                    src="billeder/insta_logo.svg"
+                    alt="instagram logo"
+                /></a>
+              </div>
+
+              <div class="grid-rows-3">
+                <li>
+                  <a class="menuItem underline" href="om.html">Om Vildskud</a>
+                </li>
+                <li>
+                  <a class="menuItem underline" href="samarbejder.html"
+                    >Samarbejde</a
+                  >
+                </li>
+                <li>
+                  <a class="menuItem underline" href="kontakt.html">Kontakt</a>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
