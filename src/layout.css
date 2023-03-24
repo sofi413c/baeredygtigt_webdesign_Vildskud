@@ -22,13 +22,3 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-
-/* section {
-  margin: 1.563rem;
-} */
-
-@media (min-width: 600px) {
-  #holder {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}

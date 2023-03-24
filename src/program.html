@@ -79,7 +79,7 @@
             <div class="">
               <label for="spillested"></label>
               <select
-                class="border-0 bg-purple_button text-white"
+                class="text-center border-0 bg-purple_button text-white"
                 name="spillested"
                 id="spillested"
                 x-model="spillested"
@@ -87,10 +87,10 @@
                 x-on:change="$nextTick(() => { ingenforestillinger() });"
               >
                 <option value="allevenues">Alle venues</option>
-                <option value="vox">Vox</option>
+                <option value="vox">Vox - Teaterhuset</option>
                 <option value="downunder">Downunder</option>
                 <option value="zebu">Zebu</option>
-                <option value="xenon">Xenon</option>
+                <option value="xenon">Xenon - Teaterhuset</option>
               </select>
             </div>
 
@@ -105,19 +105,19 @@
                 x-on:change="$nextTick(() => { ingenforestillinger() });"
               >
                 <option value="alledage">Alle dage</option>
-                <option value="tirsdag">Tirsdag</option>
-                <option value="onsdag">Onsdag</option>
-                <option value="torsdag">Torsdag</option>
-                <option value="fredag">Fredag</option>
-                <option value="lordag">Lørdag</option>
+                <option value="tirsdag">2. august</option>
+                <option value="onsdag">3. august</option>
+                <option value="torsdag">4. august</option>
+                <option value="fredag">5. august</option>
+                <option value="lordag">6. august</option>
               </select>
             </div>
           </form>
         </div>
         </section>
 
-        <!-- Forestillinger -->
-        <div class="grid md:grid-cols-3 gap-10 lg:mx-52 grid-rows-auto">
+        <!---------------- Forestillinger ------------------>
+        <div class="grid md:grid-cols-3 gap-10 lg:mx-52">
           <a href="singleview.html">
             <section
               class="cursor-pointer"
@@ -143,7 +143,7 @@
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
             >
-            <div class="bg-white text-custom_purple">
+            <div class="bg-white text-custom_purple ">
                 <img src="billeder/placeholder.webp" alt="go go yo-yoko" />
                 <div class="p-5">
                   <h3 class="uppercase">Re-Birth</h3>
@@ -154,25 +154,27 @@
             </section>
           </a>
 
-          <section
-            class="cursor-pointer"
-            :class="{'hidden': !(['alledage', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }"
-            x-transition:enter.duration.800ms
-            x-on:change="testfunction();"
-          >
-          <div class="bg-white text-custom_purple">
-              <img src="billeder/placeholder.webp" alt="go go yo-yoko" />
-              <div class="p-5">
-                <h3 class="uppercase">Frygten for ikke at leve</h3>
-                <p class="text-base mb-3">5. august, 6. august</p>
-                <p class="text-sm">Venue: Xenon - Teaterhuset</p>
+          <a href="singleview.html">
+            <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+            <div class="bg-white text-custom_purple">
+                <img src="billeder/placeholder.webp" alt="go go yo-yoko" />
+                <div class="p-5">
+                  <h3 class="uppercase">Frygten for ikke at leve</h3>
+                  <p class="text-base mb-3">5. august, 6. august</p>
+                  <p class="text-sm">Venue: Xenon - Teaterhuset</p>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </a>
     
          <a href="singleview.html">
             <section
-              class="cursor-pointer"
+              class="cursor-pointer "
               :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }"
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
@@ -190,7 +192,7 @@
 
           <a href="singleview.html">
             <section
-              class="cursor-pointer"
+              class="cursor-pointer "
               :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
