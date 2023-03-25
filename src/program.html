@@ -13,9 +13,7 @@
       defer
       src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"
     ></script>
-
     <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="layout.css" />
   </head>
     <body>
  <header>
@@ -118,131 +116,145 @@
 
         <!---------------- Forestillinger ------------------>
         <div class="grid md:grid-cols-3 gap-10 lg:mx-52">
-          <a href="singleview.html">
+          
             <section
               class="cursor-pointer"
               :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }"
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
             >
-            <div class="bg-white text-custom_purple h-full">
-                <img src="billeder/placeholder.webp" alt="go go yo-yoko" />
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple h-full shadow-xl">
+                <img src="billeder/go-go.webp" alt="go go yo-yoko" />
                 <div class="p-5">
                   <h3>GO GO YO-YOKO</h3>
                   <p class="text-base mb-3">4. august, 5. august</p>
                   <p class="text-sm">Venue: Xenon - Teaterhuset</p>
                 </div>
               </div>
+              </a>
             </section>
-          </a>
+     
         
-          <a href="singleview.html">
+          
             <section
               class="cursor-pointer"
               :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'downunder'].includes(spillested)) }"
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
             >
-            <div class="bg-white text-custom_purple ">
-                <img src="billeder/placeholder.webp" alt="go go yo-yoko" />
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl ">
+                <img src="billeder/re-birth.webp" alt="re-birth" />
                 <div class="p-5">
                   <h3 class="uppercase">Re-Birth</h3>
                   <p class="text-base mb-3">4. august, 5. august</p>
                   <p class="text-sm">Venue: Downunder</p>
                 </div>
               </div>
+              </a>
             </section>
-          </a>
+       
 
-          <a href="singleview.html">
+          
             <section
               class="cursor-pointer"
               :class="{'hidden': !(['alledage', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }"
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
             >
-            <div class="bg-white text-custom_purple">
-                <img src="billeder/placeholder.webp" alt="go go yo-yoko" />
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl">
+                <img src="billeder/frygten-for-ikke-at-leve.webp" alt="frygten for ikke at leve" />
                 <div class="p-5">
                   <h3 class="uppercase">Frygten for ikke at leve</h3>
                   <p class="text-base mb-3">5. august, 6. august</p>
                   <p class="text-sm">Venue: Xenon - Teaterhuset</p>
                 </div>
               </div>
+              </a>
             </section>
-          </a>
+         
     
-         <a href="singleview.html">
+         
             <section
               class="cursor-pointer "
               :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }"
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
             >
-            <div class="bg-white text-custom_purple">
-                <img src="billeder/placeholder.webp" alt="Vild med mig" />
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl">
+                <img src="billeder/vild-med-mig.webp" alt="vild med mig" />
                 <div class="p-5">
                   <h3 class="uppercase">Vild med mig</h3>
                   <p class="text-base mb-3">2. august, 3. august</p>
                   <p class="text-sm">Venue: Vox - Teaterhuset</p>
                 </div>
               </div>
+              </a>
             </section>
-         </a>
+       
 
-          <a href="singleview.html">
+          
             <section
               class="cursor-pointer "
               :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
             >
-              <div class="bg-white text-custom_purple">
-                <img src="billeder/placeholder.webp" alt="go go yo-yoko" />
+            <a href="singleview.html"></a>
+              <div class="bg-white text-custom_purple shadow-xl">
+                <img src="billeder/WFTWT.webp" alt="what fires together wires together" />
                 <div class="p-5">
                   <h3 class="uppercase">What Fires Together Wires Together</h3>
                   <p class="text-base mb-3">2. august, 3. august</p>
                   <p class="text-sm">Venue: Zebu</p>
                 </div>
               </div>
+                </a>
             </section>
-          </a>
+        
  
-          <a href="singleview.html">
+          
             <section
               class="cursor-pointer"
               :class="{'hidden': !(['alledage', 'torsdag', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
             >
-            <div class="bg-white text-custom_purple">
-                <img src="billeder/placeholder.webp" alt="go go yo-yoko" />
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl">
+                <img src="billeder/det-levende-rum.webp" alt="det levende rum" />
                 <div class="p-5">
                   <h3 class="uppercase">Det Levende Rum</h3>
                   <p class="text-base mb-3">4. august, 5. august, 6. august</p>
                   <p class="text-sm">Venue: Zebu</p>
                 </div>
               </div>
+              </a>
             </section>
-          </a>
+          
 
-          <a href="singleview.html">
+          
             <section
               class="cursor-pointer"
               :class="{'hidden': !(['alledage', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }"
               x-transition:enter.duration.800ms
               x-on:change="testfunction();"
             >
-            <div class="bg-white text-custom_purple">
-                <img src="billeder/placeholder.webp" alt="go go yo-yoko" />
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl">
+                <img src="billeder/mand-ligger-som-mand-har-redt.webp" alt="mand ligger som mand har redt" />
                 <div class="p-5">
                   <h3 class="uppercase">Mand Ligger Som Mand Har Redt</h3>
                   <p class="text-base mb-3">5. august, 6. august</p>
                   <p class="text-sm">Venue: Vox - Teaterhuset</p>
                 </div>
               </div>
+              </a>
             </section>
-          </a>
+         
         </div>
       </main>
 
