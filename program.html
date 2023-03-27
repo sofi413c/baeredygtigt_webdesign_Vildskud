@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program - Vildskud Festival</title>
+     <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
+      />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"
+    ></script>
+    
+    <script type="module" crossorigin src="./assets/main-1087f840.js"></script>
+    <link rel="stylesheet" href="./assets/main-10cd008b.css">
+  </head>
+    <body>
+ <header>
+      <nav>
+        <div class="navbar">
+          <div class="flex-1">
+            <a href="index.html"><img class="btn-ghost btn-square btn" src="./assets/vildskud-logo-24a671f3.png" alt="logo_vildskud" /></a>
+            <div>
+              <h3 class="text-white text-sm">VILDSKUD FESTIVAL</h3>
+              <p class="text-white text-xs">8.-12. august</p>
+            </div>
+          </div>
+
+          <div class="flex-none">
+            <button class="hamburger btn-ghost btn-square btn z-50 cursor-pointer">
+              <img class="menuIcon" src="./assets/burgermenu-3953882c.svg" alt="burgermenu" />
+              <img class="closeIcon hidden" src="./assets/kryds_burgermenu-5e4d607c.svg" alt="burgermenu-luk" />
+            </button>
+
+            <ul class="fixed top-0 right-0 bottom-0 z-40 grid w-full translate-x-full grid-rows-3 bg-beige pt-20 pl-16 text-left text-3xl font-thin text-gradient_purple backdrop-blur-lg transition-transform lg:pl-28" id="hammenu">
+              <div class="mt-10">
+                <a href="index.html"><img class="btn-ghost btn-square btn -mt-10 mb-11" src="./assets/vildskud-logo-24a671f3.png" alt="logo_vildskud" /></a>
+
+                <li class="mb-4"><a class="menuItem font-semibold" href="billetter.html">Billetter</a></li>
+                <li class="mb-4"><a class="menuItem font-semibold" href="program.html">Program</a></li>
+                <li class="mb-10"><a class="menuItem font-semibold" href="frivillig.html">Frivillig</a></li>
+              </div>
+              <div class="mb-60 mt-20 flex grid-rows-2 gap-4">
+                <a href="https://www.facebook.com/vildskudfestival/?locale=da_DK"><img class="" src="./assets/fb_logo-c471a70e.svg" alt="facebook logo" /></a>
+                <a href="https://www.instagram.com/vildskud_festival/"><img class="" src="./assets/insta_logo-6092a2f2.svg" alt="instagram logo" /></a>
+              </div>
+
+              <div class="grid-rows-3">
+                <li><a class="menuItem underline" href="om.html">Om Vildskud</a></li>
+                <li><a class="menuItem underline" href="samarbejder.html">Samarbejde</a></li>
+                <li><a class="menuItem underline" href="kontakt.html">Kontakt</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <main
+        class="text-white"
+        id="step"
+        x-data="{ spilledag: 'alledage', spillested: 'allevenues', skjulteforestillinger : 0 }"
+      >
+     <section class="mb-10 lg:mx-80">
+      <h1 class="text-center">PROGRAM</h1>
+      <p class="text-center text-base">
+        Her finder du en bred vifte af spændende og unikke forestillinger, som
+        vil tage dig med på en rejse fyldt med drama, komedie og spænding.
+      </p>
+    </section>
+
+        <!-- Filterknapper -->
+        <section class="py-10 px-8 md:px-12">
+          <div class="mb-10">
+          <form id="filtre" class="flex gap-5 justify-center">
+            <div class="">
+              <label for="spillested"></label>
+              <select
+                class="text-center border-0 bg-purple_button text-white"
+                name="spillested"
+                id="spillested"
+                x-model="spillested"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenforestillinger() });"
+              >
+                <option value="allevenues">Alle venues</option>
+                <option value="vox">Vox - Teaterhuset</option>
+                <option value="downunder">Downunder</option>
+                <option value="zebu">Zebu</option>
+                <option value="xenon">Xenon - Teaterhuset</option>
+              </select>
+            </div>
+
+            <div class="">
+              <label for="spilledag"></label>
+              <select
+                class="border-0 bg-purple_button text-white"
+                name="spilledag"
+                id="spilledag"
+                x-model="spilledag"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenforestillinger() });"
+              >
+                <option value="alledage">Alle dage</option>
+                <option value="tirsdag">2. august</option>
+                <option value="onsdag">3. august</option>
+                <option value="torsdag">4. august</option>
+                <option value="fredag">5. august</option>
+                <option value="lordag">6. august</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        </section>
+
+        <!---------------- Forestillinger ------------------>
+        <div class="grid md:grid-cols-3 gap-10 lg:mx-52">
+          
+            <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl h-full">
+                <img src="./assets/go-go-6b7d76e2.webp" alt="go go yo-yoko" />
+                <div class="p-5 grid">
+                  <h3>GO GO YO-YOKO</h3>
+                  <p class="text-base mb-3">4. august, 5. august</p>
+                  <p class="text-sm">Venue: Xenon - Teaterhuset</p>
+                </div>
+              </div>
+              </a>
+            </section>
+     
+        
+          
+            <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'torsdag', 'fredag'].includes(spilledag) && ['allevenues', 'downunder'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl h-full">
+                <img src="./assets/re-birth-cf7e0a63.webp" alt="re-birth" />
+                <div class="p-5">
+                  <h3 class="uppercase">Re-Birth</h3>
+                  <p class="text-base mb-3">4. august, 5. august</p>
+                  <p class="text-sm">Venue: Downunder</p>
+                </div>
+              </div>
+              </a>
+            </section>
+       
+
+          
+            <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'xenon'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl">
+                <img src="./assets/frygten-for-ikke-at-leve-b39e5652.webp" alt="frygten for ikke at leve" />
+                <div class="p-5">
+                  <h3 class="uppercase">Frygten for ikke at leve</h3>
+                  <p class="text-base mb-3">5. august, 6. august</p>
+                  <p class="text-sm">Venue: Xenon - Teaterhuset</p>
+                </div>
+              </div>
+              </a>
+            </section>
+         
+    
+         
+            <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl h-full">
+                <img src="./assets/vild-med-mig-45755351.webp" alt="vild med mig" />
+                <div class="p-5">
+                  <h3 class="uppercase">Vild med mig</h3>
+                  <p class="text-base mb-3">2. august, 3. august</p>
+                  <p class="text-sm">Venue: Vox - Teaterhuset</p>
+                </div>
+              </div>
+              </a>
+            </section>
+       
+
+          
+            <section
+              class="cursor-pointer "
+              :class="{'hidden': !(['alledage', 'tirsdag', 'onsdag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+            <a href="singleview.html"></a>
+              <div class="bg-white text-custom_purple shadow-xl">
+                <img src="./assets/WFTWT-03233f27.webp" alt="what fires together wires together" />
+                <div class="p-5">
+                  <h3 class="uppercase">What Fires Together Wires Together</h3>
+                  <p class="text-base mb-3">2. august, 3. august</p>
+                  <p class="text-sm">Venue: Zebu</p>
+                </div>
+              </div>
+                </a>
+            </section>
+        
+ 
+          
+            <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'torsdag', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'zebu'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl h-full">
+                <img src="data:image/webp;base64,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" alt="det levende rum" />
+                <div class="p-5">
+                  <h3 class="uppercase">Det Levende Rum</h3>
+                  <p class="text-base mb-3">4. august, 5. august, 6. august</p>
+                  <p class="text-sm">Venue: Zebu</p>
+                </div>
+              </div>
+              </a>
+            </section>
+          
+
+          
+            <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'fredag', 'lordag'].includes(spilledag) && ['allevenues', 'vox'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+            <a href="singleview.html">
+            <div class="bg-white text-custom_purple shadow-xl">
+                <img src="./assets/mand-ligger-som-mand-har-redt-0a122687.webp" alt="mand ligger som mand har redt" />
+                <div class="p-5">
+                  <h3 class="uppercase">Mand Ligger Som Mand Har Redt</h3>
+                  <p class="text-base mb-3">5. august, 6. august</p>
+                  <p class="text-sm">Venue: Vox - Teaterhuset</p>
+                </div>
+              </div>
+              </a>
+            </section>
+         
+        </div>
+      </main>
+
+      <section class="m-2 mt-10 lg:m-28 lg:mt-20">
+        <div class="divide-y-4 border"></div>
+      </section>
+  
+      <footer class="footer mx-auto grid w-full grid-cols-3 justify-items-center pb-7">
+        <div>
+          <span class="text-sm font-bold">KONTAKT</span>
+          <a class="link-hover link text-xs">Guldbergsgade 29N</a>
+          <a class="link-hover link text-xs">2200 København Nv</a>
+          <a class="link-hover link text-xs">info@vildskud.dk</a>
+          <a class="link-hover link text-xs">+45 XX XX XX XX</a>
+        </div>
+        <div>
+          <span class="text-sm font-bold">VILDSKUD</span>
+          <a href="om.html" class="link-hover link text-xs">Om Vildskud</a>
+          <a class="link-hover link text-xs">Privatlivspolitik</a>
+          <a class="link-hover link text-xs">Cookie politik</a>
+        </div>
+        <div class="mb-8">
+          <span class="text-sm font-bold">SOCIALE MEDIER</span>
+          <div class="mx-auto grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/vildskud_festival/">
+              <img src="./assets/instagram-f683ded8.svg" width="35" height="35" />
+            </a>
+            <a href="https://www.facebook.com/vildskudfestival">
+              <img class="mt-1" src="./assets/facebook-60151986.svg" width="30" height="30" />
+            </a>
+          </div>
+        </div>
+      </footer>
+       
+    </body>
+  </html>
+</html>
