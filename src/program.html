@@ -95,7 +95,7 @@
             <div class="">
               <label for="spilledag"></label>
               <select
-                class="border-0 bg-purple_button text-white"
+                class="text-center border-0 bg-purple_button text-white"
                 name="spilledag"
                 id="spilledag"
                 x-model="spilledag"
@@ -103,11 +103,11 @@
                 x-on:change="$nextTick(() => { ingenforestillinger() });"
               >
                 <option value="alledage">Alle dage</option>
-                <option value="tirsdag">2. august</option>
-                <option value="onsdag">3. august</option>
-                <option value="torsdag">4. august</option>
-                <option value="fredag">5. august</option>
-                <option value="lordag">6. august</option>
+                <option value="tirsdag">Tirsdag: 2. august</option>
+                <option value="onsdag">Onsdag: 3. august</option>
+                <option value="torsdag">Torsdag: 4. august</option>
+                <option value="fredag">Fredag: 5. august</option>
+                <option value="lordag">Lørdag: 6. august</option>
               </select>
             </div>
           </form>
@@ -124,12 +124,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl h-full">
-                <img src="billeder/go-go.webp" alt="go go yo-yoko" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="billeder/go-go.webp" alt="go go yo-yoko" />
                 <div class="p-5 grid">
-                  <h3>GO GO YO-YOKO</h3>
-                  <p class="text-base mb-3">4. august, 5. august</p>
-                  <p class="text-sm">Venue: Xenon - Teaterhuset</p>
+                  <h3 itemprop="name">GO GO YO-YOKO</h3>
+                  <p itemprop="startDate" class="text-base mb-3">Torsdag: 4. august<br>Fredag: 5. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Xenon - Teaterhuset</span></p>
                 </div>
               </div>
               </a>
@@ -144,12 +144,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl h-full">
-                <img src="billeder/re-birth.webp" alt="re-birth" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="billeder/re-birth.webp" alt="re-birth" />
                 <div class="p-5">
-                  <h3 class="uppercase">Re-Birth</h3>
-                  <p class="text-base mb-3">4. august, 5. august</p>
-                  <p class="text-sm">Venue: Downunder</p>
+                  <h3 itemprop="name" class="uppercase">Re-Birth</h3>
+                  <p itemprop="startDate" class="text-base mb-3">4. august, 5. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Downunder</span></p>
                 </div>
               </div>
               </a>
@@ -164,12 +164,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl">
-                <img src="billeder/frygten-for-ikke-at-leve.webp" alt="frygten for ikke at leve" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl">
+                <img itemprop="image" src="billeder/frygten-for-ikke-at-leve.webp" alt="frygten for ikke at leve" />
                 <div class="p-5">
-                  <h3 class="uppercase">Frygten for ikke at leve</h3>
-                  <p class="text-base mb-3">5. august, 6. august</p>
-                  <p class="text-sm">Venue: Xenon - Teaterhuset</p>
+                  <h3 itemprop="name" class="uppercase">Frygten for ikke at leve</h3>
+                  <p itemprop="startDate" class="text-base mb-3">5. august, 6. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Xenon - Teaterhuset</span></p>
                 </div>
               </div>
               </a>
@@ -184,12 +184,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl h-full">
-                <img src="billeder/vild-med-mig.webp" alt="vild med mig" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="billeder/vild-med-mig.webp" alt="vild med mig" />
                 <div class="p-5">
-                  <h3 class="uppercase">Vild med mig</h3>
-                  <p class="text-base mb-3">2. august, 3. august</p>
-                  <p class="text-sm">Venue: Vox - Teaterhuset</p>
+                  <h3 itemprop="name" class="uppercase">Vild med mig</h3>
+                  <p itemprop="startDate" class="text-base mb-3">2. august, 3. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Vox - Teaterhuset</span></p>
                 </div>
               </div>
               </a>
@@ -204,12 +204,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html"></a>
-              <div class="bg-white text-custom_purple shadow-xl">
-                <img src="billeder/WFTWT.webp" alt="what fires together wires together" />
+              <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl">
+                <img itemprop="image" src="billeder/WFTWT.webp" alt="what fires together wires together" />
                 <div class="p-5">
-                  <h3 class="uppercase">What Fires Together Wires Together</h3>
-                  <p class="text-base mb-3">2. august, 3. august</p>
-                  <p class="text-sm">Venue: Zebu</p>
+                  <h3 itemprop="name" class="uppercase">What Fires Together Wires Together</h3>
+                  <p itemprop="startDate" class="text-base mb-3">2. august, 3. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Zebu</span></p>
                 </div>
               </div>
                 </a>
@@ -224,12 +224,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl h-full">
-                <img src="billeder/det-levende-rum.webp" alt="det levende rum" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="billeder/det-levende-rum.webp" alt="det levende rum" />
                 <div class="p-5">
-                  <h3 class="uppercase">Det Levende Rum</h3>
-                  <p class="text-base mb-3">4. august, 5. august, 6. august</p>
-                  <p class="text-sm">Venue: Zebu</p>
+                  <h3 itemprop="name" class="uppercase">Det Levende Rum</h3>
+                  <p itemprop="startDate" class="text-base mb-3">4. august, 5. august, 6. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Zebu</span></p>
                 </div>
               </div>
               </a>
@@ -244,12 +244,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl">
-                <img src="billeder/mand-ligger-som-mand-har-redt.webp" alt="mand ligger som mand har redt" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl">
+                <img itemprop="image" src="billeder/mand-ligger-som-mand-har-redt.webp" alt="mand ligger som mand har redt" />
                 <div class="p-5">
-                  <h3 class="uppercase">Mand Ligger Som Mand Har Redt</h3>
-                  <p class="text-base mb-3">5. august, 6. august</p>
-                  <p class="text-sm">Venue: Vox - Teaterhuset</p>
+                  <h3 itemprop="name" class="uppercase">Mand Ligger Som Mand Har Redt</h3>
+                  <p itemprop="startDate" class="text-base mb-3">5. august, 6. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Vox - Teaterhuset</span></p>
                 </div>
               </div>
               </a>
