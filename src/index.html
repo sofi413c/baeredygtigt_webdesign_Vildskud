@@ -20,7 +20,20 @@
         </div>
       </div>
     </div>
+    <script>
+      // Cookieboks
+      const cookieBox = document.getElementById("cookiebox");
+      const afvisBtn = document.getElementById("afvis");
+      const accepterBtn = document.getElementById("accepter");
 
+      afvisBtn.addEventListener("click", () => {
+        cookieBox.style.display = "none";
+      });
+
+      accepterBtn.addEventListener("click", () => {
+        cookieBox.style.display = "none";
+      });
+    </script>
     <header>
       <nav>
         <div class="navbar">
@@ -300,6 +313,7 @@
         </div>
       </div>
     </footer>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
