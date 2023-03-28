@@ -14,8 +14,8 @@
       src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"
     ></script>
     
-    <script type="module" crossorigin src="./assets/main-c06518e5.js"></script>
-    <link rel="stylesheet" href="./assets/main-b74c0d58.css">
+    <script type="module" crossorigin src="./assets/main-7c0cf1f9.js"></script>
+    <link rel="stylesheet" href="./assets/main-82f95fdc.css">
   </head>
     <body>
  <header>
@@ -67,14 +67,14 @@
      <section class="mb-10 lg:mx-80">
       <h1 class="text-center">PROGRAM</h1>
       <p class="text-center text-base">
-        Her finder du en bred vifte af spændende og unikke forestillinger, som
+        Her finder du en bred vifte af spændende og unikke forestillinger og events, som
         vil tage dig med på en rejse fyldt med drama, komedie og spænding.
       </p>
     </section>
 
         <!-- Filterknapper -->
-        <section class="py-10 px-8 md:px-12">
-          <div class="mb-10">
+        <section class="px-8 md:px-12">
+          <div class="mb-10 mx-10">
           <form id="filtre" class="flex gap-5 justify-center">
             <div class="">
               <label for="spillested"></label>
@@ -91,13 +91,14 @@
                 <option value="downunder">Downunder</option>
                 <option value="zebu">Zebu</option>
                 <option value="xenon">Xenon - Teaterhuset</option>
+                <option value="ukirke">Ukirke (Workshops)</option>
               </select>
             </div>
 
             <div class="">
               <label for="spilledag"></label>
               <select
-                class="border-0 bg-purple_button text-white"
+                class="text-center border-0 bg-purple_button text-white"
                 name="spilledag"
                 id="spilledag"
                 x-model="spilledag"
@@ -105,11 +106,11 @@
                 x-on:change="$nextTick(() => { ingenforestillinger() });"
               >
                 <option value="alledage">Alle dage</option>
-                <option value="tirsdag">2. august</option>
-                <option value="onsdag">3. august</option>
-                <option value="torsdag">4. august</option>
-                <option value="fredag">5. august</option>
-                <option value="lordag">6. august</option>
+                <option value="tirsdag">Tirsdag: 2. august</option>
+                <option value="onsdag">Onsdag: 3. august</option>
+                <option value="torsdag">Torsdag: 4. august</option>
+                <option value="fredag">Fredag: 5. august</option>
+                <option value="lordag">Lørdag: 6. august</option>
               </select>
             </div>
           </form>
@@ -117,7 +118,7 @@
         </section>
 
         <!---------------- Forestillinger ------------------>
-        <div class="grid md:grid-cols-3 gap-10 lg:mx-52">
+        <div class="grid md:grid-cols-3 gap-10 lg:mx-52 mb-10">
           
             <section
               class="cursor-pointer"
@@ -126,12 +127,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl h-full">
-                <img src="./assets/go-go-6b7d76e2.webp" alt="go go yo-yoko" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="./assets/go-go-6b7d76e2.webp" alt="go go yo-yoko" />
                 <div class="p-5 grid">
-                  <h3>GO GO YO-YOKO</h3>
-                  <p class="text-base mb-3">4. august, 5. august</p>
-                  <p class="text-sm">Venue: Xenon - Teaterhuset</p>
+                  <h3 itemprop="name">GO GO YO-YOKO</h3>
+                  <p itemprop="startDate" class="text-base mb-3">Torsdag: 4. august<br>Fredag: 5. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Xenon - Teaterhuset</span></p>
                 </div>
               </div>
               </a>
@@ -146,12 +147,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl h-full">
-                <img src="./assets/re-birth-cf7e0a63.webp" alt="re-birth" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="./assets/re-birth-db84bf5d.webp" alt="re-birth" />
                 <div class="p-5">
-                  <h3 class="uppercase">Re-Birth</h3>
-                  <p class="text-base mb-3">4. august, 5. august</p>
-                  <p class="text-sm">Venue: Downunder</p>
+                  <h3 itemprop="name" class="uppercase">Re-Birth</h3>
+                  <p itemprop="startDate" class="text-base mb-3">Torsdag: 4. august<br>Fredag: 5. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Downunder</span></p>
                 </div>
               </div>
               </a>
@@ -166,12 +167,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl">
-                <img src="./assets/frygten-for-ikke-at-leve-b39e5652.webp" alt="frygten for ikke at leve" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl">
+                <img itemprop="image" src="./assets/frygten-for-ikke-at-leve-c6c74732.webp" alt="frygten for ikke at leve" />
                 <div class="p-5">
-                  <h3 class="uppercase">Frygten for ikke at leve</h3>
-                  <p class="text-base mb-3">5. august, 6. august</p>
-                  <p class="text-sm">Venue: Xenon - Teaterhuset</p>
+                  <h3 itemprop="name" class="uppercase">Frygten for ikke at leve</h3>
+                  <p itemprop="startDate" class="text-base mb-3">Fredag: 5. august<br>Lørdag: 6. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Xenon - Teaterhuset</span></p>
                 </div>
               </div>
               </a>
@@ -186,12 +187,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl h-full">
-                <img src="./assets/vild-med-mig-45755351.webp" alt="vild med mig" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="./assets/vild-med-mig-45755351.webp" alt="vild med mig" />
                 <div class="p-5">
-                  <h3 class="uppercase">Vild med mig</h3>
-                  <p class="text-base mb-3">2. august, 3. august</p>
-                  <p class="text-sm">Venue: Vox - Teaterhuset</p>
+                  <h3 itemprop="name" class="uppercase">Vild med mig</h3>
+                  <p itemprop="startDate" class="text-base mb-3">Tirsdag: 2. august<br>Onsdag: 3. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Vox - Teaterhuset</span></p>
                 </div>
               </div>
               </a>
@@ -206,12 +207,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html"></a>
-              <div class="bg-white text-custom_purple shadow-xl">
-                <img src="./assets/WFTWT-03233f27.webp" alt="what fires together wires together" />
+              <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl">
+                <img itemprop="image" src="./assets/WFTWT-03233f27.webp" alt="what fires together wires together" />
                 <div class="p-5">
-                  <h3 class="uppercase">What Fires Together Wires Together</h3>
-                  <p class="text-base mb-3">2. august, 3. august</p>
-                  <p class="text-sm">Venue: Zebu</p>
+                  <h3 itemprop="name" class="uppercase">What Fires Together Wires Together</h3>
+                  <p itemprop="startDate" class="text-base mb-3">Tirsdag: 2. august<br>Onsdag: 3. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Zebu</span></p>
                 </div>
               </div>
                 </a>
@@ -226,12 +227,12 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl h-full">
-                <img src="data:image/webp;base64,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" alt="det levende rum" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="data:image/webp;base64,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" alt="det levende rum" />
                 <div class="p-5">
-                  <h3 class="uppercase">Det Levende Rum</h3>
-                  <p class="text-base mb-3">4. august, 5. august, 6. august</p>
-                  <p class="text-sm">Venue: Zebu</p>
+                  <h3 itemprop="name" class="uppercase">Det Levende Rum</h3>
+                  <p itemprop="startDate" class="text-base mb-3">Torsdag: 4. august<br>Fredag: 5. august<br>Lørdag: 6. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Zebu</span></p>
                 </div>
               </div>
               </a>
@@ -246,18 +247,88 @@
               x-on:change="testfunction();"
             >
             <a href="singleview.html">
-            <div class="bg-white text-custom_purple shadow-xl">
-                <img src="./assets/mand-ligger-som-mand-har-redt-0a122687.webp" alt="mand ligger som mand har redt" />
+            <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl">
+                <img itemprop="image" src="./assets/mand-ligger-som-mand-har-redt-0a122687.webp" alt="mand ligger som mand har redt" />
                 <div class="p-5">
-                  <h3 class="uppercase">Mand Ligger Som Mand Har Redt</h3>
-                  <p class="text-base mb-3">5. august, 6. august</p>
-                  <p class="text-sm">Venue: Vox - Teaterhuset</p>
+                  <h3 itemprop="name" class="uppercase">Mand Ligger Som Mand Har Redt</h3>
+                  <p itemprop="startDate" class="text-base mb-3">Fredag: 5. august<br>Lørdag: 6. august</p>
+                  <p class="text-sm">Venue: <span itemprop="location">Vox - Teaterhuset</span></p>
                 </div>
               </div>
               </a>
             </section>
+
+         
+            </section>
+            
          
         </div>
+           <section>
+
+
+        <section>
+          <h1 class="text-center italic mb-10">WORKSHOPS</h1>
+          <div class="grid md:grid-cols-3 gap-10 lg:mx-52">
+             <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'onsdag'].includes(spilledag) && ['allevenues', 'ukirke'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+           <a href="singleview.html">
+                     <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="data:image/webp;base64,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" alt="Tabu" />
+                    <div class="p-5 grid">
+                      <h3 itemprop="name" class="uppercase">Vildskud klæder dig på til scenekunst om tabu</h3>
+                      <p itemprop="startDate" class="text-base mb-3">Onsdag: 3. august</p>
+                      <p class="text-sm">Lokation: <span itemprop="location">Ukirke</span></p>
+                     </div>
+                    </div>
+                  </a>
+            </section>
+
+            <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'torsdag'].includes(spilledag) && ['allevenues', 'ukirke'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+        <a href="singleview.html">
+                     <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="data:image/webp;base64,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" alt="Tabu" />
+                    <div class="p-5 grid">
+                      <h3 itemprop="name" class="uppercase">Vildskud klæder dig på til ny dansk dramatik</h3>
+                      <p itemprop="startDate" class="text-base mb-3">Torsdag: 4. august</p>
+                      <p class="text-sm">Lokation: <span itemprop="location">Ukirke</span></p>
+                     </div>
+                    </div>
+                  </a>
+            </section>
+
+           <section
+              class="cursor-pointer"
+              :class="{'hidden': !(['alledage', 'fredag'].includes(spilledag) && ['allevenues', 'ukirke'].includes(spillested)) }"
+              x-transition:enter.duration.800ms
+              x-on:change="testfunction();"
+            >
+         <a href="singleview.html">
+               <div itemscope itemtype="https://schema.org/Event" class="bg-white text-custom_purple shadow-xl h-full">
+                <img itemprop="image" src="data:image/webp;base64,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" alt="Scenekunst" />
+                    <div class="p-5 grid">
+                      <h3 itemprop="name" class="uppercase">Vildskud klæder dig på til fremtidens scenekunst</h3>
+                      <p itemprop="startDate" class="text-base mb-3">Fredag: 5. august</p>
+                      <p class="text-sm">Lokation: <span itemprop="location">Ukirke</span></p>
+                     </div>
+                    </div>
+          </a>
+            </section>
+
+                </div>
+   
+        </section>
+
+  
+    </section>
       </main>
 
       <section class="m-2 mt-10 lg:m-28 lg:mt-20">
