@@ -19,7 +19,7 @@ export default defineConfig({
         kontakt: resolve(__dirname, "src/kontakt.html"),
         om: resolve(__dirname, "src/om.html"),
         program: resolve(__dirname, "src/program.html"),
-        samarbejde: resolve(__dirname, "src/samarbejde.html"),
+        samarbejde: resolve(__dirname, "src/samarbejder.html"),
         singleview: resolve(__dirname, "src/singleview.html"),
       },
     },

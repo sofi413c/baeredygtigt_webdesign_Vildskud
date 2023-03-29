@@ -1,18 +1,6 @@
 import "./style.css";
 
-// Cookieboks
-const cookieBox = document.getElementById("cookiebox");
-const afvisBtn = document.getElementById("afvis");
-const accepterBtn = document.getElementById("accepter");
-
-afvisBtn.addEventListener("click", () => {
-  cookieBox.style.display = "none";
-});
-
-accepterBtn.addEventListener("click", () => {
-  cookieBox.style.display = "none";
-});
-
+/*burgermenu*/
 const menu = document.querySelector("#hammenu");
 const menuItem = document.querySelector(".menuItem");
 const hamburger = document.querySelector(".hamburger");
@@ -96,3 +84,5 @@ function toggle_knap3() {
 toggle_btn.addEventListener("click", toggle_knap);
 toggle_btn2.addEventListener("click", toggle_knap2);
 toggle_btn3.addEventListener("click", toggle_knap3);
+
+
